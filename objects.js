@@ -19,11 +19,11 @@ const maleProducts = [
     gender: "Unisex",
     category: "Male", // Adding male category
 
-    image: "./images/T-shirts-men/item-1/img1.jpg", // Main image
-    image1: "./images/T-shirts-men/item-1/img1.jpg", // Sub-image 1 (front view)
-    image2: "./images/T-shirts-men/item-1/img2.jpg", // Sub-image 2 (back view)
-    image3: "./images/T-shirts-men/item-1/img3.jpg", // Sub-image 3 (side view)
-    image4: "./images/T-shirts-men/item-1/img4.jpg", // Sub-image 4 (detail view)
+    image: "images/T-shirts-men/item-1/img1.jpg", // Main image
+    image1: "images/T-shirts-men/item-1/img1.jpg", // Sub-image 1 (front view)
+    image2: "images/T-shirts-men/item-1/img2.jpg", // Sub-image 2 (back view)
+    image3: "images/T-shirts-men/item-1/img3.jpg", // Sub-image 3 (side view)
+    image4: "images/T-shirts-men/item-1/img4.jpg", // Sub-image 4 (detail view)
     isNew: false,
     isBestSeller: true,
     isTrending: true,
@@ -47,11 +47,11 @@ const maleProducts = [
     gender: "Unisex",
     category: "Male", // Adding male category
 
-    image: "./images/T-shirts-men/item-2/img1.jpg", // Main image
-    image1: "./images/T-shirts-men/item-2/img1.jpg", // Sub-image 1 (front view)
-    image2: "./images/T-shirts-men/item-2/img2.jpg", // Sub-image 2 (back view)
-    image3: "./images/T-shirts-men/item-2/img3.jpg", // Sub-image 3 (side view)
-    image4: "./images/T-shirts-men/item-2/img4.jpg", // Sub-image 4 (detail view)
+    image: "images/T-shirts-men/item-2/img1.jpg", // Main image
+    image1: "images/T-shirts-men/item-2/img1.jpg", // Sub-image 1 (front view)
+    image2: "images/T-shirts-men/item-2/img2.jpg", // Sub-image 2 (back view)
+    image3: "images/T-shirts-men/item-2/img3.jpg", // Sub-image 3 (side view)
+    image4: "images/T-shirts-men/item-2/img4.jpg", // Sub-image 4 (detail view)
     isNew: true,
     isBestSeller: false,
     isTrending: true,
@@ -76,11 +76,11 @@ const maleProducts = [
     gender: "Unisex",
     category: "Male", // Adding male category
 
-    image: "./images/T-shirts-men/item-3/img1.jpg", // Main image
-    image1: "./images/T-shirts-men/item-3/img1.jpg", // Sub-image 1 (front view)
-    image2: "./images/T-shirts-men/item-3/img2.jpg", // Sub-image 2 (back view)
-    image3: "./images/T-shirts-men/item-3/img3.jpg", // Sub-image 3 (side view)
-    image4: "./images/T-shirts-men/item-3/img4.jpg", // Sub-image 4 (detail view)
+    image: "images/T-shirts-men/item-3/img1.jpg", // Main image
+    image1: "images/T-shirts-men/item-3/img1.jpg", // Sub-image 1 (front view)
+    image2: "images/T-shirts-men/item-3/img2.jpg", // Sub-image 2 (back view)
+    image3: "images/T-shirts-men/item-3/img3.jpg", // Sub-image 3 (side view)
+    image4: "images/T-shirts-men/item-3/img4.jpg", // Sub-image 4 (detail view)
     isNew: false,
     isBestSeller: true,
     isTrending: true,
@@ -105,11 +105,11 @@ const maleProducts = [
     gender: "Unisex",
     category: "Male", // Adding male category
 
-    image: "./images/T-shirts-men/item-4/img1.jpg", // Main image
-    image1: "./images/T-shirts-men/item-4/img1.jpg", // Sub-image 1 (front view)
-    image2: "./images/T-shirts-men/item-4/img2.jpg", // Sub-image 2 (back view)
-    image3: "./images/T-shirts-men/item-4/img3.jpg", // Sub-image 3 (side view)
-    image4: "./images/T-shirts-men/item-4/img4.jpg", // Sub-image 4 (detail view)
+    image: "images/T-shirts-men/item-4/img1.jpg", // Main image
+    image1: "images/T-shirts-men/item-4/img1.jpg", // Sub-image 1 (front view)
+    image2: "images/T-shirts-men/item-4/img2.jpg", // Sub-image 2 (back view)
+    image3: "images/T-shirts-men/item-4/img3.jpg", // Sub-image 3 (side view)
+    image4: "images/T-shirts-men/item-4/img4.jpg", // Sub-image 4 (detail view)
     isNew: true,
     isBestSeller: true,
     isTrending: false,
@@ -134,11 +134,11 @@ const maleProducts = [
     gender: "Unisex",
     category: "Male", // Adding male category
 
-    image: "./images/T-shirts-men/item-5/img1.jpg", // Main image
-    image1: "./images/T-shirts-men/item-5/img1.jpg", // Sub-image 1 (front view)
-    image2: "./images/T-shirts-men/item-5/img2.jpg", // Sub-image 2 (back view)
-    image3: "./images/T-shirts-men/item-5/img3.jpg", // Sub-image 3 (side view)
-    image4: "./images/T-shirts-men/item-5/img4.jpg", // Sub-image 4 (detail view)
+    image: "images/T-shirts-men/item-5/img1.jpg", // Main image
+    image1: "images/T-shirts-men/item-5/img1.jpg", // Sub-image 1 (front view)
+    image2: "images/T-shirts-men/item-5/img2.jpg", // Sub-image 2 (back view)
+    image3: "images/T-shirts-men/item-5/img3.jpg", // Sub-image 3 (side view)
+    image4: "images/T-shirts-men/item-5/img4.jpg", // Sub-image 4 (detail view)
     isNew: false,
     isBestSeller: true,
     isTrending: true,
@@ -162,11 +162,11 @@ const maleProducts = [
     gender: "Unisex",
     category: "Male", // Adding male category
 
-    image: "./images/T-shirts-men/item-6/img1.jpg", // Main image
-    image1: "./images/T-shirts-men/item-6/img1.jpg", // Sub-image 1 (front view)
-    image2: "./images/T-shirts-men/item-6/img2.jpg", // Sub-image 2 (back view)
-    image3: "./images/T-shirts-men/item-6/img3.jpg", // Sub-image 3 (side view)
-    image4: "./images/T-shirts-men/item-6/img4.jpg", // Sub-image 4 (detail view)
+    image: "images/T-shirts-men/item-6/img1.jpg", // Main image
+    image1: "images/T-shirts-men/item-6/img1.jpg", // Sub-image 1 (front view)
+    image2: "images/T-shirts-men/item-6/img2.jpg", // Sub-image 2 (back view)
+    image3: "images/T-shirts-men/item-6/img3.jpg", // Sub-image 3 (side view)
+    image4: "images/T-shirts-men/item-6/img4.jpg", // Sub-image 4 (detail view)
     isNew: false,
     isBestSeller: true,
     isTrending: true,
@@ -190,11 +190,11 @@ const maleProducts = [
     gender: "Unisex",
     category: "Male", // Adding male category
 
-    image: "./images/T-shirts-men/item-7/img1.jpg", // Main image
-    image1: "./images/T-shirts-men/item-7/img1.jpg", // Sub-image 1 (front view)
-    image2: "./images/T-shirts-men/item-7/img2.jpg", // Sub-image 2 (back view)
-    image3: "./images/T-shirts-men/item-7/img3.jpg", // Sub-image 3 (side view)
-    image4: "./images/T-shirts-men/item-7/img4.jpg", // Sub-image 4 (detail view)
+    image: "images/T-shirts-men/item-7/img1.jpg", // Main image
+    image1: "images/T-shirts-men/item-7/img1.jpg", // Sub-image 1 (front view)
+    image2: "images/T-shirts-men/item-7/img2.jpg", // Sub-image 2 (back view)
+    image3: "images/T-shirts-men/item-7/img3.jpg", // Sub-image 3 (side view)
+    image4: "images/T-shirts-men/item-7/img4.jpg", // Sub-image 4 (detail view)
     isNew: true,
     isBestSeller: true,
     isTrending: false,
@@ -222,11 +222,11 @@ const femaleProducts = [
     origin: "India",
     gender: "Unisex",
 
-    image: "./images/T-shirts-women/item-1/img1.jpg", // Main image
-    image1: "./images/T-shirts-women/item-1/img1.jpg", // Sub-image 1 (front view)
-    image2: "./images/T-shirts-women/item-1/img2.jpg", // Sub-image 2 (back view)
-    image3: "./images/T-shirts-women/item-1/img3.jpg", // Sub-image 3 (side view)
-    image4: "./images/T-shirts-women/item-1/img4.jpg", // Sub-image 4 (detail view)
+    image: "images/T-shirts-women/item-1/img1.jpg", // Main image
+    image1: "images/T-shirts-women/item-1/img1.jpg", // Sub-image 1 (front view)
+    image2: "images/T-shirts-women/item-1/img2.jpg", // Sub-image 2 (back view)
+    image3: "images/T-shirts-women/item-1/img3.jpg", // Sub-image 3 (side view)
+    image4: "images/T-shirts-women/item-1/img4.jpg", // Sub-image 4 (detail view)
     isNew: true,
     isBestSeller: true,
     isTrending: false,
@@ -251,11 +251,11 @@ const femaleProducts = [
     origin: "India",
     gender: "Unisex",
 
-    image: "./images/T-shirts-women/item-2/img1.jpg", // Main image
-    image1: "./images/T-shirts-women/item-2/img1.jpg", // Sub-image 1 (front view)
-    image2: "./images/T-shirts-women/item-2/img2.jpg", // Sub-image 2 (back view)
-    image3: "./images/T-shirts-women/item-2/img3.jpg", // Sub-image 3 (side view)
-    image4: "./images/T-shirts-women/item-2/img4.jpg", // Sub-image 4 (detail view)
+    image: "images/T-shirts-women/item-2/img1.jpg", // Main image
+    image1: "images/T-shirts-women/item-2/img1.jpg", // Sub-image 1 (front view)
+    image2: "images/T-shirts-women/item-2/img2.jpg", // Sub-image 2 (back view)
+    image3: "images/T-shirts-women/item-2/img3.jpg", // Sub-image 3 (side view)
+    image4: "images/T-shirts-women/item-2/img4.jpg", // Sub-image 4 (detail view)
     isNew: false,
     isBestSeller: true,
     isTrending: true,
@@ -279,11 +279,11 @@ const femaleProducts = [
     origin: "India",
     gender: "Unisex",
 
-    image: "./images/T-shirts-women/item-3/img1.jpg", // Main image
-    image1: "./images/T-shirts-women/item-3/img1.jpg", // Sub-image 1 (front view)
-    image2: "./images/T-shirts-women/item-3/img2.jpg", // Sub-image 2 (back view)
-    image3: "./images/T-shirts-women/item-3/img3.jpg", // Sub-image 3 (side view)
-    image4: "./images/T-shirts-women/item-3/img4.jpg", // Sub-image 4 (detail view)
+    image: "images/T-shirts-women/item-3/img1.jpg", // Main image
+    image1: "images/T-shirts-women/item-3/img1.jpg", // Sub-image 1 (front view)
+    image2: "images/T-shirts-women/item-3/img2.jpg", // Sub-image 2 (back view)
+    image3: "images/T-shirts-women/item-3/img3.jpg", // Sub-image 3 (side view)
+    image4: "images/T-shirts-women/item-3/img4.jpg", // Sub-image 4 (detail view)
     isNew: false,
     isBestSeller: true,
     isTrending: true,
@@ -308,11 +308,11 @@ const femaleProducts = [
     origin: "India",
     gender: "Unisex",
 
-    image: "./images/T-shirts-women/item-4/img1.jpg", // Main image
-    image1: "./images/T-shirts-women/item-4/img1.jpg", // Sub-image 1 (front view)
-    image2: "./images/T-shirts-women/item-4/img2.jpg", // Sub-image 2 (back view)
-    image3: "./images/T-shirts-women/item-4/img3.jpg", // Sub-image 3 (side view)
-    image4: "./images/T-shirts-women/item-4/img4.jpg", // Sub-image 4 (detail view)
+    image: "images/T-shirts-women/item-4/img1.jpg", // Main image
+    image1: "images/T-shirts-women/item-4/img1.jpg", // Sub-image 1 (front view)
+    image2: "images/T-shirts-women/item-4/img2.jpg", // Sub-image 2 (back view)
+    image3: "images/T-shirts-women/item-4/img3.jpg", // Sub-image 3 (side view)
+    image4: "images/T-shirts-women/item-4/img4.jpg", // Sub-image 4 (detail view)
     isNew: true,
     isBestSeller: true,
     isTrending: false,
@@ -336,11 +336,11 @@ const femaleProducts = [
     origin: "India",
     gender: "Unisex",
 
-    image: "./images/T-shirts-women/item-5/img1.jpg", // Main image
-    image1: "./images/T-shirts-women/item-5/img1.jpg", // Sub-image 1 (front view)
-    image2: "./images/T-shirts-women/item-5/img2.jpg", // Sub-image 2 (back view)
-    image3: "./images/T-shirts-women/item-5/img3.jpg", // Sub-image 3 (side view)
-    image4: "./images/T-shirts-women/item-5/img4.jpg", // Sub-image 4 (detail view)
+    image: "images/T-shirts-women/item-5/img1.jpg", // Main image
+    image1: "images/T-shirts-women/item-5/img1.jpg", // Sub-image 1 (front view)
+    image2: "images/T-shirts-women/item-5/img2.jpg", // Sub-image 2 (back view)
+    image3: "images/T-shirts-women/item-5/img3.jpg", // Sub-image 3 (side view)
+    image4: "images/T-shirts-women/item-5/img4.jpg", // Sub-image 4 (detail view)
     isNew: true,
     isBestSeller: false,
     isTrending: false,
@@ -364,11 +364,11 @@ const femaleProducts = [
     origin: "India",
     gender: "Unisex",
 
-    image: "./images/T-shirts-women/item-6/img1.jpg", // Main image
-    image1: "./images/T-shirts-women/item-6/img1.jpg", // Sub-image 1 (front view)
-    image2: "./images/T-shirts-women/item-6/img2.jpg", // Sub-image 2 (back view)
-    image3: "./images/T-shirts-women/item-6/img3.jpg", // Sub-image 3 (side view)
-    image4: "./images/T-shirts-women/item-6/img4.jpg", // Sub-image 4 (detail view)
+    image: "images/T-shirts-women/item-6/img1.jpg", // Main image
+    image1: "images/T-shirts-women/item-6/img1.jpg", // Sub-image 1 (front view)
+    image2: "images/T-shirts-women/item-6/img2.jpg", // Sub-image 2 (back view)
+    image3: "images/T-shirts-women/item-6/img3.jpg", // Sub-image 3 (side view)
+    image4: "images/T-shirts-women/item-6/img4.jpg", // Sub-image 4 (detail view)
     isNew: true,
     isBestSeller: false,
     isTrending: false,
@@ -393,17 +393,16 @@ const femaleProducts = [
     origin: "India",
     gender: "Unisex",
 
-    image: "./images/T-shirts-women/item-7/img1.jpg", // Main image
-    image1: "./images/T-shirts-women/item-7/img1.jpg", // Sub-image 1 (front view)
-    image2: "./images/T-shirts-women/item-7/img2.jpg", // Sub-image 2 (back view)
-    image3: "./images/T-shirts-women/item-7/img3.jpg", // Sub-image 3 (side view)
-    image4: "./images/T-shirts-women/item-7/img4.jpg", // Sub-image 4 (detail view)
+    image: "images/T-shirts-women/item-7/img1.jpg", // Main image
+    image1: "images/T-shirts-women/item-7/img1.jpg", // Sub-image 1 (front view)
+    image2: "images/T-shirts-women/item-7/img2.jpg", // Sub-image 2 (back view)
+    image3: "images/T-shirts-women/item-7/img3.jpg", // Sub-image 3 (side view)
+    image4: "images/T-shirts-women/item-7/img4.jpg", // Sub-image 4 (detail view)
     isNew: false,
     isBestSeller: true,
     isTrending: true,
   },
 ];
-
 const kidsProducts = [
   {
     id: 1,
@@ -421,11 +420,11 @@ const kidsProducts = [
     sleeve: "Half Sleeve",
     style: "Empire",
     origin: "India",
-    image: "./images/dress-kids/item-1/img1.jpg", // Main image
-    image1: "./images/dress-kids/item-1/img1.jpg", // Sub-image 1 (front view)
-    image2: "./images/dress-kids/item-1/img2.jpg", // Sub-image 2 (back view)
-    image3: "./images/dress-kids/item-1/img3.jpg", // Sub-image 3 (side view)
-    image4: "./images/dress-kids/item-1/img4.jpg", // Sub-image 4 (detail view)
+    image: "images/dress-kids/item-1/img1.jpg", // Main image
+    image1: "images/dress-kids/item-1/img1.jpg", // Sub-image 1 (front view)
+    image2: "images/dress-kids/item-1/img2.jpg", // Sub-image 2 (back view)
+    image3: "images/dress-kids/item-1/img3.jpg", // Sub-image 3 (side view)
+    image4: "images/dress-kids/item-1/img4.jpg", // Sub-image 4 (detail view)
     isNew: false,
     isBestSeller: true,
     isTrending: true,
@@ -446,11 +445,11 @@ const kidsProducts = [
     sleeve: "Half Sleeve",
     style: "Empire",
     origin: "India",
-    image: "./images/dress-kids/item-2/img1.jpg", // Main image
-    image1: "./images/dress-kids/item-2/img1.jpg", // Sub-image 1 (front view)
-    image2: "./images/dress-kids/item-2/img2.jpg", // Sub-image 2 (back view)
-    image3: "./images/dress-kids/item-2/img3.jpg", // Sub-image 3 (side view)
-    image4: "./images/dress-kids/item-2/img4.jpg", // Sub-image 4 (detail view)
+    image: "images/dress-kids/item-2/img1.jpg", // Main image
+    image1: "images/dress-kids/item-2/img1.jpg", // Sub-image 1 (front view)
+    image2: "images/dress-kids/item-2/img2.jpg", // Sub-image 2 (back view)
+    image3: "images/dress-kids/item-2/img3.jpg", // Sub-image 3 (side view)
+    image4: "images/dress-kids/item-2/img4.jpg", // Sub-image 4 (detail view)
     isNew: true,
     isBestSeller: false,
     isTrending: true,
@@ -470,11 +469,11 @@ const kidsProducts = [
     sleeve: "Half Sleeve",
     style: "Crew Neck",
     origin: "India",
-    image: "./images/dress-kids/item-3/img1.jpg", // Main image
-    image1: "./images/dress-kids/item-3/img1.jpg", // Sub-image 1 (front view)
-    image2: "./images/dress-kids/item-3/img2.jpg", // Sub-image 2 (back view)
-    image3: "./images/dress-kids/item-3/img3.jpg", // Sub-image 3 (side view)
-    image4: "./images/dress-kids/item-3/img4.jpg", // Sub-image 4 (detail view)
+    image: "images/dress-kids/item-3/img1.jpg", // Main image
+    image1: "images/dress-kids/item-3/img1.jpg", // Sub-image 1 (front view)
+    image2: "images/dress-kids/item-3/img2.jpg", // Sub-image 2 (back view)
+    image3: "images/dress-kids/item-3/img3.jpg", // Sub-image 3 (side view)
+    image4: "images/dress-kids/item-3/img4.jpg", // Sub-image 4 (detail view)
     isNew: false,
     isBestSeller: true,
     isTrending: true,
@@ -494,11 +493,11 @@ const kidsProducts = [
     sleeve: "Half Sleeve",
     style: "Anarkali",
     origin: "India",
-    image: "./images/dress-kids/item-4/img1.jpg", // Main image
-    image1: "./images/dress-kids/item-4/img1.jpg", // Sub-image 1 (front view)
-    image2: "./images/dress-kids/item-4/img2.jpg", // Sub-image 2 (back view)
-    image3: "./images/dress-kids/item-4/img3.jpg", // Sub-image 3 (side view)
-    image4: "./images/dress-kids/item-4/img4.jpg", // Sub-image 4 (detail view)
+    image: "images/dress-kids/item-4/img1.jpg", // Main image
+    image1: "images/dress-kids/item-4/img1.jpg", // Sub-image 1 (front view)
+    image2: "images/dress-kids/item-4/img2.jpg", // Sub-image 2 (back view)
+    image3: "images/dress-kids/item-4/img3.jpg", // Sub-image 3 (side view)
+    image4: "images/dress-kids/item-4/img4.jpg", // Sub-image 4 (detail view)
     isNew: false,
     isBestSeller: true,
     isTrending: false,
@@ -519,11 +518,11 @@ const kidsProducts = [
     sleeve: "Long Sleeve",
     style: "Empire",
     origin: "India",
-    image: "./images/dress-kids/item-5/img1.jpg", // Main image
-    image1: "./images/dress-kids/item-5/img1.jpg", // Sub-image 1 (front view)
-    image2: "./images/dress-kids/item-5/img2.jpg", // Sub-image 2 (back view)
-    image3: "./images/dress-kids/item-5/img3.jpg", // Sub-image 3 (side view)
-    image4: "./images/dress-kids/item-5/img4.jpg", // Sub-image 4 (detail view)
+    image: "images/dress-kids/item-5/img1.jpg", // Main image
+    image1: "images/dress-kids/item-5/img1.jpg", // Sub-image 1 (front view)
+    image2: "images/dress-kids/item-5/img2.jpg", // Sub-image 2 (back view)
+    image3: "images/dress-kids/item-5/img3.jpg", // Sub-image 3 (side view)
+    image4: "images/dress-kids/item-5/img4.jpg", // Sub-image 4 (detail view)
     isNew: false,
     isBestSeller: true,
     isTrending: true,
@@ -544,11 +543,11 @@ const kidsProducts = [
     sleeve: "Short Sleeve",
     style: "Club Collar",
     origin: "India",
-    image: "./images/dress-kids/item-6/img1.jpg", // Main image
-    image1: "./images/dress-kids/item-6/img1.jpg", // Sub-image 1 (front view)
-    image2: "./images/dress-kids/item-6/img2.jpg", // Sub-image 2 (back view)
-    image3: "./images/dress-kids/item-6/img3.jpg", // Sub-image 3 (side view)
-    image4: "./images/dress-kids/item-6/img4.jpg", // Sub-image 4 (detail view)
+    image: "images/dress-kids/item-6/img1.jpg", // Main image
+    image1: "images/dress-kids/item-6/img1.jpg", // Sub-image 1 (front view)
+    image2: "images/dress-kids/item-6/img2.jpg", // Sub-image 2 (back view)
+    image3: "images/dress-kids/item-6/img3.jpg", // Sub-image 3 (side view)
+    image4: "images/dress-kids/item-6/img4.jpg", // Sub-image 4 (detail view)
     isNew: true,
     isBestSeller: true,
     isTrending: false,
@@ -568,11 +567,11 @@ const kidsProducts = [
     sleeve: "Long Sleeve",
     style: "Empire",
     origin: "India",
-    image: "./images/dress-kids/item-7/img1.jpg", // Main image
-    image1: "./images/dress-kids/item-7/img1.jpg", // Sub-image 1 (front view)
-    image2: "./images/dress-kids/item-7/img2.jpg", // Sub-image 2 (back view)
-    image3: "./images/dress-kids/item-7/img3.jpg", // Sub-image 3 (side view)
-    image4: "./images/dress-kids/item-7/img4.jpg", // Sub-image 4 (detail view)
+    image: "images/dress-kids/item-7/img1.jpg", // Main image
+    image1: "images/dress-kids/item-7/img1.jpg", // Sub-image 1 (front view)
+    image2: "images/dress-kids/item-7/img2.jpg", // Sub-image 2 (back view)
+    image3: "images/dress-kids/item-7/img3.jpg", // Sub-image 3 (side view)
+    image4: "images/dress-kids/item-7/img4.jpg", // Sub-image 4 (detail view)
     isNew: false,
     isBestSeller: true,
     isTrending: false,
