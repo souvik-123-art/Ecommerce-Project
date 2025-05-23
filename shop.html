@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce-Website</title>
+    <link rel="icon" href="/Images/favicon_orange.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      @media (max-width: 450px) {
+        .custom-grid-450 {
+          grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="font-['lexend']">
+    <div
+      class="loader-sec fixed inset-0 bg-[#ffffff] transition-opacity duration-200 opacity-100 flex items-center justify-center z-50"
+    >
+      <div class="loader"></div>
+    </div>
+    <!-- all wrapper starts  -->
+    <div class="wrapper">
+      <header class="w-full px-4 bg-[#1E293B] sm:py-4 py-2 sticky top-0 z-20">
+        <div class="container flex items-center justify-between mx-auto">
+          <div class="logo w-auto h-12">
+            <img
+              class="w-full h-full object-cover"
+              src="Images/logo2.png"
+              alt=""
+            />
+          </div>
+          <div class="nav-menu text-[#fff] flex md:gap-12 gap-4">
+            <ul class="pc-nav lg:flex items-center gap-8 text-[#fff] text-lg hidden">
+              <a href="index.html"><li>Home</li></a>
+              <a class="shopBtn cursor-pointer"><li>Shop</li></a>
+              <a href="about.html"><li>About</li></a>
+              <a href="blog.html"><li>Blog</li></a>
+              <a href="contact.html"><li>Contact</li></a>
+            </ul>
+            <ul
+              class="mob-nav z-50 fixed w-4/5 h-full lg:hidden flex flex-col justify-start items-start gap-12 text-2xl left-0 top-0 bg-[#dbebff] text-[#1E293B] translate-x-[-100%] transition-all duration-200 px-12 py-20"
+            >
+              <a href="index.html"><li>Home</li></a>
+              <li>
+                <h2 class="shop-head flex gap-1 items-center">
+                  Shop
+                  <span
+                    class="drop-arrow block lg:hidden font-light text-2xl text-[#444] transition-all duration-200"
+                    ><i class="ri-arrow-right-s-line"></i
+                  ></span>
+                </h2>
+                <div class="shop-cat-mob hidden text-lg">
+                  <div class="men-products">
+                    <div class="heading mb-2">
+                      <p class="relative text-md font-bold">Mens</p>
+                    </div>
+                    <ul class="text-sm text-[#333]">
+                      <li class="mb-4">
+                        <a href="shop.html?product=T-shirts&cat=Male"
+                          >Men T-shirts</a
+                        >
+                      </li>
+                      <li class="mb-4"><a href="#">Men Watches</a></li>
+                    </ul>
+                  </div>
+                  <div class="female-products">
+                    <div class="heading mb-2">
+                      <p class="relative text-md font-bold">Womens</p>
+                    </div>
+                    <ul class="text-sm text-[#333]">
+                      <li class="mb-4">
+                        <a href="shop.html?product=T-shirts&cat=Female"
+                          >women T-shirts</a
+                        >
+                      </li>
+                      <li class="mb-4"><a href="#">Women Watches</a></li>
+                    </ul>
+                  </div>
+                  <div class="kids-products">
+                    <div class="heading mb-2">
+                      <p class="relative text-md font-bold">Kids</p>
+                    </div>
+                    <ul class="text-sm text-[#333]">
+                      <li class="mb-4">
+                        <a href="shop.html?product=Dress&cat=Children"
+                          >Kids T-shirts</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mobile-products">
+                    <div class="heading mb-2">
+                      <p class="relative text-md font-bold">Mobile</p>
+                    </div>
+                    <ul class="text-sm text-[#333]">
+                      <li class="mb-4">
+                        <a href="shop.html?product=Mobile&cat=Apple">Iphone</a>
+                      </li>
+                      <li class="mb-4">
+                        <a href="shop.html?product=Mobile&cat=Android"
+                          >Android</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <a href="about.html"><li>About</li></a>
+              <a href="blog.html"><li>Blog</li></a>
+              <a href="contact.html"><li>Contact</li></a>
+            </ul>
+            <div id="search">
+              <i
+                id="search-icon"
+                class="ri-search-line text-2xl hover:opacity-60 transition-all duration-300 cursor-pointer"
+              ></i>
+            </div>
+            <a href="cart.html" class="block cursor-pointer"
+              ><div
+                id="shp-cart"
+                class="relative hover:opacity-80 transition-all duration-300"
+              >
+                <i class="ri-shopping-bag-line text-2xl"></i>
+                <div
+                  class="bg-orange-400 text-white rounded-full w-3 h-3 absolute top-0 -right-2 flex justify-center items-center p-3"
+                >
+                  6
+                </div>
+              </div></a
+            >
+            <div id="mob-menu" class="lg:hidden">
+              <i
+                id="m-icon"
+                class="ri-menu-3-line text-2xl active:text-[#118074]"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- shop categories  -->
+      <div
+        class="shop-cat hidden inset-x-5 bg-[#fefefe] opacity-0 transition-all duration-200 border-[#dadada] border-x border-b mx-auto fixed z-5"
+      >
+        <div
+          class="container mx-auto flex justify-between flex-wrap gap-3 py-4 px-12"
+        >
+          <div class="close-cat absolute right-2 top-0 text-2xl">
+            <i class="ri-close-line hover:opacity-60"></i>
+          </div>
+          <div class="men-products">
+            <div class="heading mb-2">
+              <p
+                class="relative text-lg font-bold before:content-[''] before:absolute before:w-full before:h-[2px] before:bottom-0 before:left-0 before:bg-black"
+              >
+                Mens
+              </p>
+            </div>
+            <ul class="text-sm text-[#333]">
+              <li class="mb-4">
+                <a href="shop.html?product=T-shirts&cat=Male">Men T-shirts</a>
+              </li>
+              <li class="mb-4">
+                <a href="shop.html?product=Watch&cat=Male">Men Watches</a>
+              </li>
+            </ul>
+          </div>
+          <div class="female-products">
+            <div class="heading mb-2">
+              <p
+                class="relative text-lg font-bold before:content-[''] before:absolute before:w-full before:h-[2px] before:bottom-0 before:left-0 before:bg-black"
+              >
+                Womens
+              </p>
+            </div>
+            <ul class="text-sm text-[#333]">
+              <li class="mb-4">
+                <a href="shop.html?product=T-shirts&cat=Female"
+                  >women T-shirts</a
+                >
+              </li>
+              <li class="mb-4">
+                <a href="shop.html?product=watch&cat=Female">Women Watches</a>
+              </li>
+            </ul>
+          </div>
+          <div class="kids-products">
+            <div class="heading mb-2">
+              <p
+                class="relative text-lg font-bold before:content-[''] before:absolute before:w-full before:h-[2px] before:bottom-0 before:left-0 before:bg-black"
+              >
+                Kids
+              </p>
+            </div>
+            <ul class="text-sm text-[#333]">
+              <li class="mb-4">
+                <a href="shop.html?product=Dress&cat=Children">Kids T-shirts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile-products">
+            <div class="heading mb-2">
+              <p
+                class="relative text-lg font-bold before:content-[''] before:absolute before:w-full before:h-[2px] before:bottom-0 before:left-0 before:bg-black"
+              >
+                Mobile
+              </p>
+            </div>
+            <ul class="text-sm text-[#333]">
+              <li class="mb-4">
+                <a href="shop.html?product=Mobile&cat=Apple">Iphone</a>
+              </li>
+              <li class="mb-4">
+                <a href="shop.html?product=Mobile&cat=Android">Android</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="back container mx-auto mt-2 mb-3 cursor-pointer lg:hidden px-6"
+      >
+        <button onclick="history.back()" class="text-gray-600">
+          <i class="fa-solid fa-arrow-left-long text-2xl"></i>
+        </button>
+      </div>
+      <!-- shop categories  -->
+      <section
+        id="shop-products"
+        class="md:px-12 md:py-12 px-6 py-6 w-full mb-12"
+      >
+        <div
+          class="container mx-auto flex flex-col lg:grid lg:grid-cols-5 gap-4"
+        >
+          <div
+            class="filters col-span-1 border border-[#dadada] rounded-lg self-start py-2 px-4 sm:py-4"
+          >
+            <div class="btn">
+              <h2
+                class="filter-text text-lg sm:text-2xl font-bold lg:mb-8 flex gap-2 items-center"
+              >
+                Filters
+                <span
+                  class="drop-arrow block lg:hidden font-light text-md text-[#444] transition-all duration-200"
+                  ><i class="ri-arrow-right-s-line"></i
+                ></span>
+              </h2>
+            </div>
+
+            <div class="chkboxes hidden lg:flex flex-col">
+              <div class="flex items-center gap-2 mb-4">
+                <input
+                  type="checkbox"
+                  class="checkbox"
+                  name="Trending"
+                  id="trending"
+                />
+                <label for="trending" class="text-sm sm:text-lg"
+                  >Trending</label
+                >
+              </div>
+              <div class="flex items-center gap-2 mb-4">
+                <input
+                  type="checkbox"
+                  class="checkbox"
+                  name="Bestselling"
+                  id="bestselling"
+                />
+                <label for="bestselling" class="text-sm sm:text-lg"
+                  >Bestselling</label
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <input type="checkbox" class="checkbox" name="New" id="new" />
+                <label for="new" class="text-sm sm:text-lg">New</label>
+              </div>
+            </div>
+          </div>
+          <div
+            id="product-wrapper"
+            class="col-span-4 grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-2 xl:gap-4 h-full lg:border border-[#dadada] rounded-lg lg:p-4 custom-grid-450"
+          >
+            <template id="productTemplate">
+              <a class="w-full block" id="box-val"
+                ><div
+                  class="box w-full h-full border border-[#E2E8F0] px-2 py-2 rounded-xl bg-[#F8FAFC] flex flex-col"
+                >
+                  <div
+                    class="pro-img w-full aspect-[5/4] rounded-2xl overflow-hidden border border-[#E2E8F0] mb-2 relative"
+                  >
+                    <img
+                      id="Pro-img"
+                      class="w-full h-full object-cover object-top"
+                      src="Images/T-shirts-men/item-3/img1.jpg"
+                      alt=""
+                    />
+                    <!-- <div
+                    id="checkout-buttons"
+                    class="invisible lg:visible absolute bottom-0 right-[50%] translate-x-[50%] transition-all duration-300 flex gap-2 z-3 hidden"
+                  >
+                    <a href="#" id="box-val"
+                      ><button
+                        id="checkoutBtn"
+                        class="w-10 h-10 bg-[#fff] rounded-full text-sm flex items-center justify-center text-[#222] cursor-pointer hover:opacity-80"
+                      >
+                        <i class="ri-eye-line"></i></button
+                    ></a>
+                    <button
+                      id="addToCartBtn"
+                      class="w-10 h-10 bg-[#fff] rounded-full text-sm flex items-center justify-center text-[#222] cursor-pointer hover:opacity-80"
+                    >
+                      <i class="ri-shopping-cart-line"></i>
+                    </button>
+                  </div>
+                  <div
+                    class="checkout-bg invisible lg:visible absolute left-0 bottom-[100%] inset-0 bg-black/50 z-2"
+                  ></div> -->
+                  </div>
+                  <div class="pro-des px-2">
+                    <h1 id="brandName" class="text-sm text-[#1E293B]">
+                      NOBERO
+                    </h1>
+                    <h1
+                      id="proTitle"
+                      class="text-md font-[600] text-[#1E293B] mb-2"
+                    >
+                      Men's Graphic Print Oversized Fit T-Shirt
+                    </h1>
+                    <div class="currCond flex gap-2 mb-2">
+                      <div
+                        id="new"
+                        class="px-2 bg-pink-300 rounded-full text-xs hidden"
+                      >
+                        New
+                      </div>
+                      <div
+                        id="bestseller"
+                        class="px-2 bg-green-300 rounded-full text-xs hidden"
+                      >
+                        Bestseller
+                      </div>
+                      <div
+                        id="trending"
+                        class="px-2 bg-yellow-300 rounded-full text-xs hidden"
+                      >
+                        Trending
+                      </div>
+                    </div>
+                    <div class="ratings flex gap-4">
+                      <div id="stars" class="text-sm text-[#ffae00] mb-2">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <div id="ratingtxt" class="text-sm">
+                        <p id="ratingCount"></p>
+                      </div>
+                    </div>
+
+                    <h1
+                      id="discount"
+                      class="text-md text-[#F1F5F9] bg-[#1E293B] px-4 rounded-full inline-block mb-2"
+                    >
+                      30% off
+                    </h1>
+                    <div id="price-sec" class="flex gap-4 items-center mb-4">
+                      <h1 id="disPrice" class="text-lg font-bold">₹1,799</h1>
+                      <h1
+                        id="actPrice"
+                        class="text-md line-through text-[#777]"
+                      >
+                        ₹1,799
+                      </h1>
+                    </div>
+                    <!-- <div
+                    id="checkout-buttons-mob"
+                    class="flex gap-2 justify-center lg:hidden"
+                  >
+                    <a href="#" id="box-val"
+                      ><button
+                        id="checkoutBtn"
+                        class="w-10 h-10 bg-[#87CEEB] rounded-full text-sm flex items-center justify-center text-[#fff] cursor-pointer hover:opacity-80"
+                      >
+                        <i class="ri-eye-line"></i></button
+                    ></a>
+                    <button
+                      id="addToCartBtn"
+                      class="w-10 h-10 bg-[#87CEEB] rounded-full text-sm flex items-center justify-center text-[#fff] cursor-pointer hover:opacity-80"
+                    >
+                      <i class="ri-shopping-cart-line"></i>
+                    </button>
+                  </div> -->
+                  </div>
+                </div></a
+              >
+            </template>
+          </div>
+        </div>
+      </section>
+      <!-- newsletter section  -->
+      <section
+        id="newslet"
+        class="w-full h-auto bg-black/80 sm:py-12 px-6 py-6 bg-[url(images/banner/b14.png)] bg-no-repeat bg-cover bg-center"
+      >
+        <div
+          class="container mx-auto flex flex-col md:flex-row items-center justify-between lg:gap-4 gap-12"
+        >
+          <div class="text-[#fff]">
+            <h1 class="sm:text-3xl text-2xl font-bold mb-4">
+              Sign Up for Newsletters
+            </h1>
+            <p class="xl:text-xl text-md">
+              Get E-mail updates about our latest shop and
+              <span class="text-[#ffae00]">special offers</span>
+            </p>
+          </div>
+          <form
+            action="#"
+            class="flex flex-col sm:flex-row gap-2 sm:gap-0 w-full sm:w-auto"
+          >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your Email..."
+              class="bg-[#fff] px-8 py-4 focus:outline-none w-full sm:w-auto"
+            />
+            <button
+              type="submit"
+              class="bg-orange-400 px-8 py-4 text-[#fff] border-2 border-orange-400 hover:bg-[#ffae00] hover:border-[#ffae00] cursor-pointer w-full sm:w-auto transition-all duration-300"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </section>
+      <!-- footer section  -->
+      <footer class="px-6 py-12 bg-stone-200 text-stone-700">
+        <div
+          class="container mx-auto flex justify-between flex-col md:flex-row gap-12"
+        >
+          <div class="section-1 md:w-1/2 w-full">
+            <div class="logo mb-12">
+              <img class="w-auto h-12" src="images/logo1.png" alt="" />
+            </div>
+            <div class="contact mb-12">
+              <h1 class="text-2xl font-bold mb-8 text-[#333]">Contact</h1>
+              <p class="text-md mb-3">
+                <span class="font-bold">Address:</span> 562 Wellington road,
+                Street32, San Francisco
+              </p>
+              <p class="text-md mb-3">
+                <span class="font-bold">Phone:</span> +01 2222 365/(+91) 01 2345
+                6789
+              </p>
+              <p class="text-md mb-3">
+                <span class="font-bold">Hours:</span> 10:00 - 18:00, Mon - Sat
+              </p>
+            </div>
+            <div class="follow-social">
+              <h1 class="text-2xl font-bold mb-4 text-[#333]">Follow us</h1>
+              <div class="social flex items-center gap-2">
+                <div id="fb">
+                  <a
+                    href="https://www.facebook.com/NescafeIndia/"
+                    class="text-2xl"
+                    target="_blank"
+                    ><i
+                      class="fa-brands fa-facebook hover:text-[#fdc958] active:text-[#ffae00] hover:translate-y-[-10%] transition-all duration-300"
+                    ></i
+                  ></a>
+                </div>
+                <div id="x">
+                  <a
+                    href="https://x.com/i/flow/login?redirect_after_login=%2Fnescafeindia"
+                    class="text-2xl"
+                    target="_blank"
+                    ><i
+                      class="fa-brands fa-x-twitter hover:text-[#fdc958] active:text-[#ffae00] hover:translate-y-[-10%] transition-all duration-300"
+                    ></i
+                  ></a>
+                </div>
+                <div id="insta">
+                  <a
+                    href="https://www.instagram.com/NescafeIndia/"
+                    class="text-2xl"
+                    target="_blank"
+                    ><i
+                      class="fa-brands fa-instagram hover:text-[#fdc958] active:text-[#ffae00] hover:translate-y-[-10%] transition-all duration-300"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section-2 md:w-1/2 w-full">
+            <div class="about">
+              <h1 class="text-2xl font-bold mb-6 t font-[500] text-[#333]">
+                About
+              </h1>
+              <ul>
+                <li class="text-md mb-3">About Us</li>
+                <li class="text-md mb-3">Delivery Information</li>
+                <li class="text-md mb-3">Privacy Policy</li>
+                <li class="text-md mb-3">Terms & Condition</li>
+                <li class="text-md mb-3">Contact Us</li>
+              </ul>
+            </div>
+          </div>
+          <div class="section-3 md:w-1/2 w-full">
+            <div class="My Account">
+              <h1 class="text-2xl font-bold mb-8 text-[#333]">My Account</h1>
+              <ul>
+                <li class="text-md mb-3">Sign In</li>
+                <li class="text-md mb-3">View Cart</li>
+                <li class="text-md mb-3">My Wishlist</li>
+                <li class="text-md mb-3">Track My Order</li>
+                <li class="text-md mb-3">Help</li>
+              </ul>
+            </div>
+          </div>
+          <div class="section-4 md:w-1/2 w-full">
+            <div class="install-app">
+              <h1 class="text-2xl font-bold mb-8 text-[#333]">Install App</h1>
+              <p class="text-md mb-3">From App Store or Google Play</p>
+              <div class="apk-btn mb-4">
+                <input
+                  class="border-1 border-stone-700 rounded-md"
+                  type="image"
+                  src="images/pay/play.jpg"
+                  alt=""
+                />
+                <input
+                  class="border-1 border-stone-700 rounded-md"
+                  type="image"
+                  src="images/pay/app.jpg"
+                  alt=""
+                />
+              </div>
+              <p class="text-md mb-3">Secured Payment Gateways</p>
+              <div class="payment">
+                <img src="images/pay/pay.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div
+      id="navBg"
+      class="fixed backdrop-blur-sm inset-0 bg-black/50 top-0 right-0 z-10 hidden"
+    ></div>
+    <!-- all wrapper ends  -->
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="objects.js"></script>
+    <script src="shopHandle.js"></script>
+    <script src="cart.js"></script>
+  </body>
+</html>

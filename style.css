@@ -1,0 +1,232 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-shape-divider-bottom-1696038172 {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1696038172 svg {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 12rem;
+}
+
+.custom-shape-divider-bottom-1696038172 .shape-fill {
+  fill: #fff;
+}
+.swiper-pagination-bullet {
+  position: relative;
+  width: 40px; /* Width of each bullet */
+  height: 5px; /* Height of the bullet */
+  background: rgba(0, 0, 0, 0.273); /* Inactive bullet color */
+  border-radius: 2px;
+  margin: 0 4px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.swiper-pagination-bullet .progress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  background: #000; /* Active progress color */
+  transition: width 0.1s linear;
+}
+
+.swiper-pagination-bullet-active {
+  background: rgba(0, 0, 0, 0.3); /* Keep the background for active bullet */
+}
+/* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 60px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid #c8c8c8;
+  animation: l20-1 0.8s infinite linear alternate, l20-2 1.6s infinite linear;
+}
+@keyframes l20-1 {
+  0% {
+    clip-path: polygon(50% 50%, 0 0, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%);
+  }
+  12.5% {
+    clip-path: polygon(
+      50% 50%,
+      0 0,
+      50% 0%,
+      100% 0%,
+      100% 0%,
+      100% 0%,
+      100% 0%
+    );
+  }
+  25% {
+    clip-path: polygon(
+      50% 50%,
+      0 0,
+      50% 0%,
+      100% 0%,
+      100% 100%,
+      100% 100%,
+      100% 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      50% 50%,
+      0 0,
+      50% 0%,
+      100% 0%,
+      100% 100%,
+      50% 100%,
+      0% 100%
+    );
+  }
+  62.5% {
+    clip-path: polygon(
+      50% 50%,
+      100% 0,
+      100% 0%,
+      100% 0%,
+      100% 100%,
+      50% 100%,
+      0% 100%
+    );
+  }
+  75% {
+    clip-path: polygon(
+      50% 50%,
+      100% 100%,
+      100% 100%,
+      100% 100%,
+      100% 100%,
+      50% 100%,
+      0% 100%
+    );
+  }
+  100% {
+    clip-path: polygon(
+      50% 50%,
+      50% 100%,
+      50% 100%,
+      50% 100%,
+      50% 100%,
+      50% 100%,
+      0% 100%
+    );
+  }
+}
+@keyframes l20-2 {
+  0% {
+    transform: scaleY(1) rotate(0deg);
+  }
+  49.99% {
+    transform: scaleY(1) rotate(135deg);
+  }
+  50% {
+    transform: scaleY(-1) rotate(0deg);
+  }
+  100% {
+    transform: scaleY(-1) rotate(-135deg);
+  }
+}
+
+/* Checkbox styles */
+.chkboxes input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.chkboxes input[type="checkbox"]:checked {
+  background-color: #f97316;
+  border-color: #f97316;
+}
+
+.chkboxes input[type="checkbox"]:checked::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.chkboxes label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+.shop-cat ul li a:hover {
+  opacity: 80%;
+  transition: all 0.3ms ease-in;
+}
+#box-val .box {
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+#box-val .box:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+#box-val .box:active {
+  opacity: 60%;
+}
+.mob-nav{
+  overflow: auto;
+  &&::-webkit-scrollbar {
+    display: none;
+  }
+}
+header .pc-nav li {
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  &&:hover {
+    color: #ffb79f;
+  }
+  &&:active {
+    color: #fb774b;
+  }
+}
+header .pc-nav a li {
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+header .pc-nav a li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ffb79f;
+  transition: width 0.3s ease;
+}
+
+header .pc-nav a li:hover::after {
+  width: 100%;
+}

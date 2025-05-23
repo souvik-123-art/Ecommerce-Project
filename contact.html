@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce-Website</title>
+    <link rel="icon" href="/Images/favicon_orange.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="font-['lexend']">
+    <div
+      class="loader-sec fixed inset-0 bg-[#ffffff] transition-opacity duration-200 opacity-100 flex items-center justify-center z-50"
+    >
+      <div class="loader"></div>
+    </div>
+    <!-- all wrapper starts  -->
+    <div class="wrapper">
+      <header class="w-full px-4 bg-[#1E293B] sm:py-4 py-2 sticky top-0 z-20">
+        <div class="container flex items-center justify-between mx-auto">
+          <div class="logo w-auto h-12">
+            <img
+              class="w-full h-full object-cover"
+              src="Images/logo2.png"
+              alt=""
+            />
+          </div>
+          <div class="nav-menu text-[#fff] flex md:gap-12 gap-4">
+            <ul class="pc-nav lg:flex items-center gap-8 text-[#fff] text-lg hidden">
+              <a href="index.html"><li>Home</li></a>
+              <a class="shopBtn cursor-pointer"><li>Shop</li></a>
+              <a href="about.html"><li>About</li></a>
+              <a href="blog.html"><li>Blog</li></a>
+              <a href="contact.html"><li>Contact</li></a>
+            </ul>
+            <ul
+              class="mob-nav z-50 fixed w-4/5 h-full lg:hidden flex flex-col justify-start items-start gap-12 text-2xl left-0 top-0 bg-[#dbebff] text-[#1E293B] translate-x-[-100%] transition-all duration-200 px-12 py-20"
+            >
+              <a href="index.html"><li>Home</li></a>
+              <li>
+                <h2 class="shop-head flex gap-1 items-center">
+                  Shop
+                  <span
+                    class="drop-arrow block lg:hidden font-light text-2xl text-[#444] transition-all duration-200"
+                    ><i class="ri-arrow-right-s-line"></i
+                  ></span>
+                </h2>
+                <div class="shop-cat-mob hidden text-lg">
+                  <div class="men-products">
+                    <div class="heading mb-2">
+                      <p class="relative text-md font-bold">Mens</p>
+                    </div>
+                    <ul class="text-sm text-[#333]">
+                      <li class="mb-4">
+                        <a href="shop.html?product=T-shirts&cat=Male"
+                          >Men T-shirts</a
+                        >
+                      </li>
+                      <li class="mb-4"><a href="#">Men Watches</a></li>
+                    </ul>
+                  </div>
+                  <div class="female-products">
+                    <div class="heading mb-2">
+                      <p class="relative text-md font-bold">Womens</p>
+                    </div>
+                    <ul class="text-sm text-[#333]">
+                      <li class="mb-4">
+                        <a href="shop.html?product=T-shirts&cat=Female"
+                          >women T-shirts</a
+                        >
+                      </li>
+                      <li class="mb-4"><a href="#">Women Watches</a></li>
+                    </ul>
+                  </div>
+                  <div class="kids-products">
+                    <div class="heading mb-2">
+                      <p class="relative text-md font-bold">Kids</p>
+                    </div>
+                    <ul class="text-sm text-[#333]">
+                      <li class="mb-4">
+                        <a href="shop.html?product=Dress&cat=Children"
+                          >Kids T-shirts</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mobile-products">
+                    <div class="heading mb-2">
+                      <p class="relative text-md font-bold">Mobile</p>
+                    </div>
+                    <ul class="text-sm text-[#333]">
+                      <li class="mb-4">
+                        <a href="shop.html?product=Mobile&cat=Apple">Iphone</a>
+                      </li>
+                      <li class="mb-4">
+                        <a href="shop.html?product=Mobile&cat=Android"
+                          >Android</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <a href="about.html"><li>About</li></a>
+              <a href="blog.html"><li>Blog</li></a>
+              <a href="contact.html"><li>Contact</li></a>
+            </ul>
+            <div id="search">
+              <i
+                id="search-icon"
+                class="ri-search-line text-2xl hover:opacity-60 transition-all duration-300 cursor-pointer"
+              ></i>
+            </div>
+            <a href="cart.html" class="block cursor-pointer"
+              ><div
+                id="shp-cart"
+                class="relative hover:opacity-80 transition-all duration-300"
+              >
+                <i class="ri-shopping-bag-line text-2xl"></i>
+                <div
+                  class="bg-orange-400 text-white rounded-full w-3 h-3 absolute top-0 -right-2 flex justify-center items-center p-3"
+                >
+                  6
+                </div>
+              </div></a
+            >
+            <div id="mob-menu" class="lg:hidden">
+              <i
+                id="m-icon"
+                class="ri-menu-3-line text-2xl active:text-[#118074]"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- shop categories  -->
+      <div
+        class="shop-cat hidden inset-x-5 bg-[#fefefe] opacity-0 transition-opacity duration-200 border-[#dadada] border-x border-b mx-auto fixed z-5"
+      >
+        <div
+          class="container mx-auto flex justify-between flex-wrap gap-3 py-4 px-12"
+        >
+          <div class="close-cat absolute right-2 top-0 text-2xl">
+            <i class="ri-close-line hover:opacity-60"></i>
+          </div>
+          <div class="men-products">
+            <div class="heading mb-2">
+              <p
+                class="relative text-lg font-bold before:content-[''] before:absolute before:w-full before:h-[2px] before:bottom-0 before:left-0 before:bg-black"
+              >
+                Mens
+              </p>
+            </div>
+            <ul class="text-sm text-[#333]">
+              <li class="mb-4">
+                <a href="shop.html?product=T-shirts&cat=Male">Men T-shirts</a>
+              </li>
+              <li class="mb-4"><a href="#">Men Watches</a></li>
+            </ul>
+          </div>
+          <div class="female-products">
+            <div class="heading mb-2">
+              <p
+                class="relative text-lg font-bold before:content-[''] before:absolute before:w-full before:h-[2px] before:bottom-0 before:left-0 before:bg-black"
+              >
+                Womens
+              </p>
+            </div>
+            <ul class="text-sm text-[#333]">
+              <li class="mb-4">
+                <a href="shop.html?product=T-shirts&cat=Female"
+                  >women T-shirts</a
+                >
+              </li>
+              <li class="mb-4"><a href="#">Women Watches</a></li>
+            </ul>
+          </div>
+          <div class="kids-products">
+            <div class="heading mb-2">
+              <p
+                class="relative text-lg font-bold before:content-[''] before:absolute before:w-full before:h-[2px] before:bottom-0 before:left-0 before:bg-black"
+              >
+                Kids
+              </p>
+            </div>
+            <ul class="text-sm text-[#333]">
+              <li class="mb-4">
+                <a href="shop.html?product=Dress&cat=Children">Kids T-shirts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile-products">
+            <div class="heading mb-2">
+              <p
+                class="relative text-lg font-bold before:content-[''] before:absolute before:w-full before:h-[2px] before:bottom-0 before:left-0 before:bg-black"
+              >
+                Mobile
+              </p>
+            </div>
+            <ul class="text-sm text-[#333]">
+              <li class="mb-4">
+                <a href="shop.html?product=Mobile&cat=Apple">Iphone</a>
+              </li>
+              <li class="mb-4">
+                <a href="shop.html?product=Mobile&cat=Android">Android</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- hero section  -->
+      <section
+        id="hero"
+        class="h-[400px] w-full bg-[url(images/banner/banner.png)] bg-top bg-no-repeat bg-cover sm:px-12 px-6 py-12 flex items-center justify-center"
+      >
+        <div id="hero-text" class="flex flex-col text-center items-center">
+          <h1
+            class="xl:text-5xl text-4xl text-[#fff] text-2xl font-[800] mb-8 italic"
+          >
+            #let's_talk
+          </h1>
+          <p
+            class="lg:text-4xl md:text-3xl sm:text-2xl text-xl text-[#fff] mb-8"
+          >
+            LEAVE A MESSAGE.We love to hear from you!
+          </p>
+        </div>
+      </section>
+      <!-- address section  -->
+      <section id="address" class="w-full px-6 py-12 mb-8 h-auto">
+        <div class="add-sec container mx-auto flex md:flex-row flex-col gap-4">
+          <div class="texts md:w-1/2 w-full">
+            <p class="text-md font-[300] mb-4">GET IN TOUCH</p>
+            <h1 class="lg:text-3xl text-2xl font-bold mb-4">
+              Visit one of our agency locations or contact us today
+            </h1>
+            <h1 class="lg:text-2xl text-xl font-bold mb-4">Head Office</h1>
+            <p class="lg:text-md text-sm flex items-center gap-4 mb-3">
+              <i class="ri-map-pin-line"></i>56 Glassford Street Glasgow GI IUL
+              New York
+            </p>
+            <p class="lg:text-md text-sm flex items-center gap-4 mb-3">
+              <i class="ri-mail-line"></i>contact@example.com
+            </p>
+            <p class="lg:text-md text-sm flex items-center gap-4 mb-3">
+              <i class="ri-phone-line"></i>contact@example.com
+            </p>
+            <p class="lg:text-md text-sm flex items-center gap-4 mb-3">
+              <i class="ri-time-line"></i>Monday to Saturday: 9:00am to 16.pm
+            </p>
+          </div>
+          <div class="map md:w-1/2 w-full">
+            <iframe
+              class="w-full h-full"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14726.359493957272!2d88.41901331384273!3d22.669075020857022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89ef726d6d0ab%3A0x2842351bd9563b6f!2sBirati%2C%20Kolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1746084848317!5m2!1sen!2sin"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      <!-- contact form  -->
+      <section id="form-sec" class="px-6 py-12 w-full mb-8">
+        <div
+          class="container mx-auto flex items-center flex-col md:flex-row gap-15 md:gap-8"
+        >
+          <div class="forms md:w-1/2 w-full">
+            <p class="text-lg mb-4 font-[300] text-[#bbb]">LEAVE A MESSAGE</p>
+            <h1 class="text-3xl font-bold mb-8">We love to hear from you</h1>
+            <form
+              action="index.html"
+              onsubmit="return validateForm()"
+              id="form"
+              class="flex flex-col gap-4"
+            >
+              <div class="name">
+                <input
+                  class="w-full h-15 p-4 border border-[#dadada] focus:outline-[#118074] rounded-md"
+                  type="text"
+                  id="nm-inp"
+                  placeholder="Your name"
+                />
+                <div class="error"></div>
+              </div>
+              <div class="email">
+                <input
+                  class="w-full h-15 p-4 border border-[#dadada] focus:outline-[#118074] rounded-md"
+                  type="text"
+                  id="em-inp"
+                  placeholder="Your Email"
+                />
+                <div class="error"></div>
+              </div>
+              <div class="subject">
+                <input
+                  class="w-full h-15 p-4 border border-[#dadada] focus:outline-[#118074] rounded-md"
+                  type="text"
+                  id="sub-inp"
+                  placeholder="Subject"
+                />
+                <div class="error"></div>
+              </div>
+              <div class="msg-sec mb-8">
+                <textarea
+                  rows="5"
+                  class="w-full p-4 border border-[#dadada] focus:outline-[#118074] rounded-md resize-none"
+                  name="message"
+                  id="msg-inp"
+                  placeholder="Your Message"
+                ></textarea>
+                <div class="error"></div>
+              </div>
+              <button
+                type="submit"
+                class="bg-[#118074] lg:px-8 lg:py-4 sm:text-md text-sm px-6 py-3 text-[#fff] border-2 border-[#118074] hover:bg-[#ffae00] hover:border-[#ffae00] hover:text-[#118074] cursor-pointer w-full sm:w-auto transition-all duration-300 md:self-start self-center rounded-md"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+          <div class="people md:w-1/2 w-full flex flex-col items-center gap-6">
+            <div class="p1 flex gap-3">
+              <div class="img">
+                <img src="images/people/1.png" alt="" />
+              </div>
+              <div class="text">
+                <h1 class="text-xl font-bold">John Doe</h1>
+                <p class="text-md font-[500] text-[#aaa]">
+                  Senior Marketing Manager
+                </p>
+                <p class="text-sm font-[300]">Phone: +91 15698746479</p>
+                <p class="text-sm font-[300]">Email: example@gmail.com</p>
+              </div>
+            </div>
+            <div class="p2 flex gap-3">
+              <div class="img">
+                <img src="images/people/2.png" alt="" />
+              </div>
+              <div class="text">
+                <h1 class="text-xl font-bold">Willaim Smith</h1>
+                <p class="text-md font-[500] text-[#aaa]">
+                  Senior Marketing Manager
+                </p>
+                <p class="text-sm font-[300]">Phone: +91 15698746479</p>
+                <p class="text-sm font-[300]">Email: example@gmail.com</p>
+              </div>
+            </div>
+            <div class="p3 flex gap-3">
+              <div class="img">
+                <img src="images/people/3.png" alt="" />
+              </div>
+              <div class="text">
+                <h1 class="text-xl font-bold">Emma Stone</h1>
+                <p class="text-md font-[500] text-[#aaa]">
+                  Senior Marketing Manager
+                </p>
+                <p class="text-sm font-[300]">Phone: +91 15698746479</p>
+                <p class="text-sm font-[300]">Email: example@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- newsletter section  -->
+      <section
+        id="newslet"
+        class="w-full h-auto bg-black/80 sm:py-12 py-6 bg-[url(images/banner/b14.png)] bg-no-repeat bg-cover bg-center"
+      >
+        <div
+          class="container mx-auto flex flex-col md:flex-row items-center justify-between lg:gap-4 gap-12 px-6"
+        >
+          <div class="text-[#fff]">
+            <h1 class="sm:text-3xl text-2xl font-bold mb-4">
+              Sign Up for Newsletters
+            </h1>
+            <p class="xl:text-xl text-md">
+              Get E-mail updates about our latest shop and
+              <span class="text-[#ffae00]">special offers</span>
+            </p>
+          </div>
+          <form
+            action="#"
+            class="flex flex-col sm:flex-row gap-2 sm:gap-0 w-full sm:w-auto"
+          >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your Email..."
+              class="bg-[#fff] px-8 py-4 focus:outline-none w-full sm:w-auto"
+            />
+            <button
+              type="submit"
+              class="bg-orange-400 px-8 py-4 text-[#fff] border-2 border-orange-400 hover:bg-[#ffae00] hover:border-[#ffae00] cursor-pointer w-full sm:w-auto transition-all duration-300"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </section>
+      <!-- footer section  -->
+      <footer class="py-12 bg-stone-200 text-stone-700">
+        <div
+          class="container px-6 mx-auto flex justify-between flex-col md:flex-row gap-12"
+        >
+          <div class="section-1 md:w-1/2 w-full">
+            <div class="logo mb-12">
+              <img class="w-auto h-12" src="images/logo1.png" alt="" />
+            </div>
+            <div class="contact mb-12">
+              <h1 class="text-2xl font-bold mb-8 text-[#333]">Contact</h1>
+              <p class="text-md mb-3">
+                <span class="font-bold">Address:</span> 562 Wellington road,
+                Street32, San Francisco
+              </p>
+              <p class="text-md mb-3">
+                <span class="font-bold">Phone:</span> +01 2222 365/(+91) 01 2345
+                6789
+              </p>
+              <p class="text-md mb-3">
+                <span class="font-bold">Hours:</span> 10:00 - 18:00, Mon - Sat
+              </p>
+            </div>
+            <div class="follow-social">
+              <h1 class="text-2xl font-bold mb-4 text-[#333]">Follow us</h1>
+              <div class="social flex items-center gap-2">
+                <div id="fb">
+                  <a
+                    href="https://www.facebook.com/NescafeIndia/"
+                    class="text-2xl"
+                    target="_blank"
+                    ><i
+                      class="fa-brands fa-facebook hover:text-[#fdc958] active:text-[#ffae00] hover:translate-y-[-10%] transition-all duration-300"
+                    ></i
+                  ></a>
+                </div>
+                <div id="x">
+                  <a
+                    href="https://x.com/i/flow/login?redirect_after_login=%2Fnescafeindia"
+                    class="text-2xl"
+                    target="_blank"
+                    ><i
+                      class="fa-brands fa-x-twitter hover:text-[#fdc958] active:text-[#ffae00] hover:translate-y-[-10%] transition-all duration-300"
+                    ></i
+                  ></a>
+                </div>
+                <div id="insta">
+                  <a
+                    href="https://www.instagram.com/NescafeIndia/"
+                    class="text-2xl"
+                    target="_blank"
+                    ><i
+                      class="fa-brands fa-instagram hover:text-[#fdc958] active:text-[#ffae00] hover:translate-y-[-10%] transition-all duration-300"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section-2 md:w-1/2 w-full">
+            <div class="about">
+              <h1 class="text-2xl font-bold mb-6 t font-[500] text-[#333]">
+                About
+              </h1>
+              <ul>
+                <li class="text-md mb-3">About Us</li>
+                <li class="text-md mb-3">Delivery Information</li>
+                <li class="text-md mb-3">Privacy Policy</li>
+                <li class="text-md mb-3">Terms & Condition</li>
+                <li class="text-md mb-3">Contact Us</li>
+              </ul>
+            </div>
+          </div>
+          <div class="section-3 md:w-1/2 w-full">
+            <div class="My Account">
+              <h1 class="text-2xl font-bold mb-8 text-[#333]">My Account</h1>
+              <ul>
+                <li class="text-md mb-3">Sign In</li>
+                <li class="text-md mb-3">View Cart</li>
+                <li class="text-md mb-3">My Wishlist</li>
+                <li class="text-md mb-3">Track My Order</li>
+                <li class="text-md mb-3">Help</li>
+              </ul>
+            </div>
+          </div>
+          <div class="section-4 md:w-1/2 w-full">
+            <div class="install-app">
+              <h1 class="text-2xl font-bold mb-8 text-[#333]">Install App</h1>
+              <p class="text-md mb-3">From App Store or Google Play</p>
+              <div class="apk-btn mb-4">
+                <input
+                  class="border-1 border-stone-700 rounded-md"
+                  type="image"
+                  src="images/pay/play.jpg"
+                  alt=""
+                />
+                <input
+                  class="border-1 border-stone-700 rounded-md"
+                  type="image"
+                  src="images/pay/app.jpg"
+                  alt=""
+                />
+              </div>
+              <p class="text-md mb-3">Secured Payment Gateways</p>
+              <div class="payment">
+                <img src="images/pay/pay.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div
+      id="navBg"
+      class="fixed backdrop-blur-sm inset-0 bg-black/50 top-0 right-0 z-10 hidden"
+    ></div>
+    <!-- all wrapper ends  -->
+    <script src="main.js"></script>
+    <script src="formval.js"></script>
+    <script src="cart.js"></script>
+  </body>
+</html>
